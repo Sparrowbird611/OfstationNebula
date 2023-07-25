@@ -70,6 +70,23 @@
 		to_chat(owner, SPAN_NOTICE("<b>Shift-left-click your Psi icon</b> on the bottom right to <b>view a summary of how to use them</b>, or <b>left click</b> it to <b>suppress or unsuppress</b> your psionics. Beware: overusing your gifts can have <b>deadly consequences</b>."))
 		to_chat(owner, "<hr>")
 
+//OFSTATION EDIT BEGIN
+/datum/psi_complexus/proc/adjust_psi_gen()
+	psistam_regen = 0
+	var/mob/living/carbon/human/H = owner
+	if(H.get_shock() > 10)
+		psistam_regen += 1
+	if(H.get_shock() > 50)
+		psistam_regen += 1
+	if(H.reagents.has_reagent(/decl/material/liquid/hallucinogenics || /decl/material/liquid/psychoactives || /decl/material/liquid/psychotropics || /decl/material/liquid/narcotics))
+		psistam_regen += 1.5
+	if(H.reagents.has_reagent(/decl/material/liquid/glowsap/gleam))
+		psistam_regen += 2
+	else if(psistam_regen == 0)
+		psistam_regen -= 0.5
+
+//OFSTATION EDIT END
+
 /datum/psi_complexus/Process()
 
 	var/update_hud
@@ -100,11 +117,20 @@
 				to_chat(owner, SPAN_DANGER("You feel your psi-power leeched away by \the [psi_leech]..."))
 			else
 				stamina++
-		else if(stamina < max_stamina)
+	/*	else if(stamina < max_stamina) 					OFSTATION EDIT BEGIN
 			if(owner.stat == CONSCIOUS)
 				stamina = min(max_stamina, stamina + rand(1,3))
 			else if(owner.stat == UNCONSCIOUS)
-				stamina = min(max_stamina, stamina + rand(3,5))
+				stamina = min(max_stamina, stamina + rand(3,5))*/
+							//OFSTATION EDIT BEGIN
+		else if(stamina < max_stamina)
+			stamina = min(max_stamina, stamina + psistam_regen)
+			if(stamina <= 0)
+				stamina = 0
+				suppressed = TRUE
+				update_hud = TRUE
+			adjust_psi_gen()
+														//OFSTATION EDIT END
 
 		if(!owner.nervous_system_failure() && owner.stat == CONSCIOUS && stamina && !suppressed && get_rank(PSI_REDACTION) >= PSI_RANK_OPERANT)
 			attempt_regeneration()
@@ -245,3 +271,4 @@
 		owner.adjustOxyLoss(-(heal_rate))
 		if(prob(25))
 			to_chat(owner, SPAN_NOTICE("Your skin crawls as your autoredactive faculty heals your body."))
+
