@@ -72,18 +72,21 @@
 
 //OFSTATION EDIT BEGIN
 /datum/psi_complexus/proc/adjust_psi_gen()
-	psistam_regen = 0
+
+	traumastam_regen = 0
 	var/mob/living/carbon/human/H = owner
+
 	if(H.get_shock() > 10)
-		psistam_regen += 1
+		traumastam_regen += 1
 	if(H.get_shock() > 50)
-		psistam_regen += 1
+		traumastam_regen += 1
 	if(H.reagents.has_reagent(/decl/material/liquid/hallucinogenics || /decl/material/liquid/psychoactives || /decl/material/liquid/psychotropics || /decl/material/liquid/narcotics))
-		psistam_regen += 1.5
+		traumastam_regen += 1.5
 	if(H.reagents.has_reagent(/decl/material/liquid/glowsap/gleam))
-		psistam_regen += 2
-	else if(psistam_regen == 0)
-		psistam_regen -= 0.5
+		traumastam_regen += 2
+	else if(traumastam_regen == 0)
+		traumastam_regen -= 0.5
+
 
 //OFSTATION EDIT END
 
@@ -115,16 +118,16 @@
 			if(stamina > 10)
 				stamina = max(0, stamina - rand(15,20))
 				to_chat(owner, SPAN_DANGER("You feel your psi-power leeched away by \the [psi_leech]..."))
-			else
-				stamina++
+//			else
+//				stamina++
 	/*	else if(stamina < max_stamina) 					OFSTATION EDIT BEGIN
 			if(owner.stat == CONSCIOUS)
 				stamina = min(max_stamina, stamina + rand(1,3))
 			else if(owner.stat == UNCONSCIOUS)
 				stamina = min(max_stamina, stamina + rand(3,5))*/
-							//OFSTATION EDIT BEGIN
+													//OFSTATION EDIT BEGIN
 		else if(stamina < max_stamina)
-			stamina = min(max_stamina, stamina + psistam_regen)
+			stamina = min(max_stamina, stamina + traumastam_regen + cyberstam_regen)
 			if(stamina <= 0)
 				stamina = 0
 				suppressed = TRUE
