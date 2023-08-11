@@ -70,26 +70,32 @@
 		to_chat(owner, SPAN_NOTICE("<b>Shift-left-click your Psi icon</b> on the bottom right to <b>view a summary of how to use them</b>, or <b>left click</b> it to <b>suppress or unsuppress</b> your psionics. Beware: overusing your gifts can have <b>deadly consequences</b>."))
 		to_chat(owner, "<hr>")
 
-//OFSTATION EDIT BEGIN
-/datum/psi_complexus/proc/adjust_psi_gen()
+/// Literally just stores time since the human owner was in pain.
+/datum/psi_complexus/var/suffering_time
 
-	traumastam_regen = 0
-	var/mob/living/carbon/human/H = owner
-
-	if(H.get_shock() > 10)
-		traumastam_regen += 1
-	if(H.get_shock() > 50)
-		traumastam_regen += 1
-	if(H.reagents.has_reagent(/decl/material/liquid/hallucinogenics || /decl/material/liquid/psychoactives || /decl/material/liquid/psychotropics || /decl/material/liquid/narcotics))
-		traumastam_regen += 1.5
-	if(H.reagents.has_reagent(/decl/material/liquid/glowsap/gleam))
-		traumastam_regen += 2
-	else if(traumastam_regen == 0)
-		traumastam_regen -= 0.5
-
-
-//OFSTATION EDIT END
-
+/// Doesn't modify stamina, rather returns the amount it would be modified.
+/datum/psi_complexus/proc/on_stamina()
+	. = 0
+	. += cyberstam_regen
+	if(ishuman(owner))
+		var/mob/living/carbon/human/human_owner = owner
+		var/suffering = human_owner.get_shock()
+		
+		if(suffering > 0)
+			. += 1.05^suffering
+		
+			if(world.time - suffering_time > 1000)
+				to_chat(owner, SPAN_DANGER("Your psionic power amplifies with your pain!"))
+		
+			suffering_time = world.time	
+		else
+			. -= 1.01^(world.time - suffering_time)
+		
+		for(var/decl/material/liquid/reagent in human_owner.reagents.reagent_volumes)
+			. += 0.5*reagent.euphoriant
+			
+	return .
+	
 /datum/psi_complexus/Process()
 
 	var/update_hud
