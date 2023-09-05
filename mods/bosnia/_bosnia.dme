@@ -2,6 +2,6 @@
 #define MODPACK_BOSNIA
 // BEGIN_INCLUDE
 #include "_bosnia.dm"
-#include "organs\internal\brain.dm"
+#include "modules\organs\internal\brain.dm"
 // END_INCLUDE
 #endif

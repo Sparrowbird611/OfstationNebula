@@ -2,8 +2,9 @@
 
 	#include "../random_ruins/exoplanet_ruins/playablecolony/playablecolony.dm"
 
+	#include "../../mods/bosnia/_bosnia.dme"
+
 	#include "../../mods/content/mundane.dm"
-	#include "../../mods/content/bosnia/_bosnia.dme"
 	#include "../../mods/content/bigpharma/_bigpharma.dme"
 	#include "../../mods/content/corporate/_corporate.dme"
 	#include "../../mods/content/government/_government.dme"
