@@ -3,5 +3,8 @@
 // BEGIN_INCLUDE
 #include "_bosnia.dm"
 #include "modules\organs\internal\brain.dm"
+#include "modules\uplink\chameleon.dm"
+#include "modules\uplink\concealed_cane.dm"
+#include "modules\uplink\uplink_tools.dm"
 // END_INCLUDE
 #endif
