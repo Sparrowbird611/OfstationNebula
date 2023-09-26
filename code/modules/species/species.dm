@@ -232,7 +232,7 @@ var/global/const/DEFAULT_SPECIES_HEALTH = 200
 	var/decl/pronouns/default_pronouns
 	var/list/available_pronouns = list(
 		/decl/pronouns,
-		/decl/pronouns/neuter/person,
+//		/decl/pronouns/neuter/person, OFSTATION EDIT
 		/decl/pronouns/female,
 		/decl/pronouns/male
 	)

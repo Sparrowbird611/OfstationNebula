@@ -171,7 +171,7 @@
 				SPAN_DANGER("Blood sprays out from \the [owner]'s [spray_organ]!"),
 				FONT_HUGE(SPAN_DANGER("Blood sprays out from your [spray_organ]!"))
 			)
-			SET_STATUS_MAX(owner, STAT_STUN, 1)
+//			SET_STATUS_MAX(owner, STAT_STUN, 1) OFSTATION EDIT
 			owner.set_status(STAT_BLURRY, 2)
 
 			//AB occurs every heartbeat, this only throttles the visible effect

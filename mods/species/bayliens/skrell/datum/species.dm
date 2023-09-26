@@ -22,9 +22,6 @@
 
 	meat_type = /obj/item/chems/food/fish/octopus/skrell
 	bone_material = /decl/material/solid/bone/cartilage
-	available_pronouns = list(
-		/decl/pronouns/skrell
-	)
 	hidden_from_codex = FALSE
 
 	preview_outfit = /decl/hierarchy/outfit/job/generic/scientist
