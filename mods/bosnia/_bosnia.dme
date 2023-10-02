@@ -2,6 +2,7 @@
 #define MODPACK_BOSNIA
 // BEGIN_INCLUDE
 #include "_bosnia.dm"
+#include "modules\guns\projectile\automatic.dm"
 #include "modules\organs\internal\brain.dm"
 #include "modules\uplink\chameleon.dm"
 #include "modules\uplink\concealed_cane.dm"
