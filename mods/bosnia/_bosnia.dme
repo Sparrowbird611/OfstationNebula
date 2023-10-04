@@ -3,12 +3,15 @@
 // BEGIN_INCLUDE
 #include "_bosnia.dm"
 #include "game\gamemodes\game_mode_selection_edits.dm"
+#include "game\gamemodes\heist_antag.dm"
 #include "modules\guns\projectile\automatic.dm"
 #include "modules\organs\internal\brain.dm"
 #include "modules\fabrication\_fabricator_defines.dm"
 #include "modules\fabrication\robotics\designs_robot_components.dm"
 #include "modules\uplink\chameleon.dm"
 #include "modules\uplink\concealed_cane.dm"
+#include "modules\uplink\heist_uplink.dm"
+#include "modules\uplink\uplink_items.dm"
 #include "modules\uplink\uplink_tools.dm"
 // END_INCLUDE
 #endif
