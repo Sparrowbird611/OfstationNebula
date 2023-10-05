@@ -307,28 +307,35 @@
 	desc = "Show folks who the top bitch in this ship is with this swanky coat! Comes with pistol grade armor, so you won't be left totally defenseless either!"
 	item_cost = 8
 	path = /obj/item/clothing/suit/armor/pirate
-/*
-/datum/uplink_item/item/heistarmor/ballisticarmor
+
+/datum/uplink_item/item/heistarmor/shades
+	name = "Protective Sunglasses and Half Mask"
+	desc = "You want to look like a real badass? Ditch the helmet, throw on the shades and mask, and kick ass. Crash this ship with no survivors, \
+	and do it in style."
+	item_cost = 8
+	path = /obj/item/storage/box/syndie_kit/shades
+
+datum/uplink_item/item/heistarmor/ballisticarmor
 	name = "Full Ballistic Armor"
 	desc = "For when you absolutely, positively expect to get shot, accept no substitutes. Full ballistic armor is probably the best protection you can get \
 	against ballistic threats, but the kevlar plates don't help much against energy based projectiles, and it won't stop much more than a knife in a brawl."
 	item_cost = 16
-	path = /obj/item/clothing/suit/armor/pirate
+	path = /obj/item/storage/backpack/satchel/syndie_kit/ballisticarmor
 
 /datum/uplink_item/item/heistarmor/ablativearmor
 	name = "Full Ablative Armor"
 	desc = "Literally blind people with your fashion in this shiny ablative armor. It's more than capable of deflecting energy beams off of those diamond coated \
 	armored plates, just don't expect it to hold up to bullets!"
 	item_cost = 16
-	path = /obj/item/clothing/suit/armor/pirate
+	path = /obj/item/storage/backpack/satchel/syndie_kit/ablativearmor
 
 /datum/uplink_item/item/heistarmor/armored_voidsuit
 	name = "Armored Voidsuit"
 	desc = "With a little elbow grease, ingenuity, and a whole lot of armored plates, you can get this fairly protective voidsuit. It looks ugly, \
 	but the additional accessories do a good job of hiding the shody workmanship."
 	item_cost = 24
-	path = /obj/item/clothing/suit/armor/pirate
-*/
+	path = /obj/item/storage/backpack/satchel/syndie_kit/piratevoid
+
 /////////////////////
 //Tools and Support//
 /////////////////////

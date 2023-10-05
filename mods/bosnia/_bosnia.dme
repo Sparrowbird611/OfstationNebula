@@ -11,6 +11,7 @@
 #include "modules\fabrication\robotics\designs_robot_components.dm"
 #include "modules\uplink\chameleon.dm"
 #include "modules\uplink\concealed_cane.dm"
+#include "modules\uplink\heist_items.dm"
 #include "modules\uplink\heist_uplink.dm"
 #include "modules\uplink\uplink_items.dm"
 #include "modules\uplink\uplink_tools.dm"
