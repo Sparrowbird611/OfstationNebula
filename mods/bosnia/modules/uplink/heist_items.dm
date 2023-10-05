@@ -26,7 +26,7 @@
 /obj/item/clothing/head/helmet/space/void/pirate/alt //captain's hat
 	icon = 'mods/bosnia/icons/clothing/spacesuit/void/heist/helmetalt.dmi'
 
-/obj/item/clothing/head/helmet/space/void/random/Initialize()
+/obj/item/clothing/head/helmet/space/void/pirate/random/Initialize()
 	. = ..()
 	icon = pick('mods/bosnia/icons/clothing/spacesuit/void/heist/helmet.dmi', 'mods/bosnia/icons/clothing/spacesuit/void/heist/helmetalt.dmi')
 
@@ -71,7 +71,7 @@
 
 /obj/item/storage/backpack/satchel/syndie_kit/piratevoid/WillContain()
 	return list(
-			/obj/item/clothing/head/helmet/space/void/random,
+			/obj/item/clothing/head/helmet/space/void/pirate/random,
 			/obj/item/clothing/suit/space/void/pirate/random,
 			/obj/item/tank/emergency/oxygen/double,
 			/obj/item/clothing/mask/gas/half,
