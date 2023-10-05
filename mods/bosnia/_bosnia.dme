@@ -5,6 +5,7 @@
 #include "game\gamemodes\game_mode_selection_edits.dm"
 #include "game\gamemodes\heist_antag.dm"
 #include "modules\guns\projectile\automatic.dm"
+#include "modules\guns\projectile\pistol.dm"
 #include "modules\organs\internal\brain.dm"
 #include "modules\fabrication\_fabricator_defines.dm"
 #include "modules\fabrication\robotics\designs_robot_components.dm"
