@@ -10,7 +10,7 @@
 
 /obj/item/clothing/head/helmet/space/void/pirate
 	name = "scrap armor voidsuit helmet"
-	desc = "A comfortable voidsuit helmet with cranial armor and eight-channel surround sound."
+	desc = "A voidsuit helmet covered in makeshift plasteel armor, providing moderate protection against projectile attacks.."
 	icon = 'mods/bosnia/icons/clothing/spacesuit/void/heist/helmet.dmi'
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_RESISTANT,
@@ -32,7 +32,7 @@
 
 /obj/item/clothing/suit/space/void/pirate
 	name = "scrap armor voidsuit"
-	desc = "Covered in crudely welded together plates of plasteel, ."
+	desc = "A voidsuit crudely fitted with plasteel plates, providing additional protection from projectiles. It has a coat with a kraken on the back sewn into it."
 	icon = 'mods/bosnia/icons/clothing/spacesuit/void/heist/suit.dmi'
 	armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_RESISTANT,
