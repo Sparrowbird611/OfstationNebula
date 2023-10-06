@@ -1,4 +1,5 @@
-//Gives Raiders an uplink so they can have more consistent gearing, but without giving them the same exact tools as mercs. Lean towards cheap or improvised stuff
+//Gives Raiders an uplink so they can have more consistent gearing, but without giving them the same exact tools as mercs. Lean towards cheap or improvised stuff\
+and make it slightly overpriced
 
 /////////////////////
 //Uplink Categories//
@@ -33,66 +34,66 @@
 	name = "Combat Knife"
 	desc = "Fer hardened sea dogs, a solid dirk is the only blade ya need. This here combat knife is a real beauty, and will save you in a pinch \
 	if ya get caught with yer peg leg off!"
-	item_cost = 6
+	item_cost = 8
 	path = /obj/item/knife/combat
 
 /datum/uplink_item/item/heistguns/pistol
 	name = "10mm Pistol"
 	desc = "Pop a cap in those scurvy dogs with this here 10mm handgun! She's a little more reliable than yer average flintlock, and comes \
 	cheap enough for any hard up seaman to afford."
-	item_cost = 25
+	item_cost = 30
 	path = /obj/item/gun/projectile/pistol
 
 /datum/uplink_item/item/heistguns/harpoonbomb
 	name = "Explosive Harpoon"
 	desc = "Yar Har matey, channel yer inner Captain Ahab with this here explosive harpoon, and spear Moby Dick (and the cops)!"
-	item_cost = 15
+	item_cost = 20
 	path = /obj/item/harpoon/bomb
 
 /datum/uplink_item/item/heistguns/concealed_cane
 	name = "Cane Sword"
 	desc = "Flex on those there landlubbers with this fancy cane, and slice their booty with the sword contained within!"
-	item_cost = 16
+	item_cost = 28
 	path = /obj/item/cane/concealed
 
 /datum/uplink_item/item/heistguns/combat_shotgun
 	name = "Pump Shotgun"
 	desc = "Four plus one rounds of solid killin power. What more could an enterprising pirate ask for?"
-	item_cost = 55
+	item_cost = 70
 	path = /obj/item/gun/projectile/shotgun/pump
 
 /datum/uplink_item/item/heistguns/sawnoff
 	name = "Sawnoff Shotgun"
 	desc = "This here double barrelled blunderbuss is a real treat to draw on unsuspecting feds. Fire both barrels at once and blow their faces off, YAR!"
-	item_cost = 45
+	item_cost = 50
 	path = /obj/item/gun/projectile/shotgun/doublebarrel/sawn
 
 /datum/uplink_item/item/heistguns/revolver
 	name = "Magnum Revolver"
 	desc = "Six men on the dead man's chest, yo ho ho and a bottle of rum! And if you need to make it twelve dead men, this baby comes with a spare speedloader \
 	of high power rounds that could put a hole in a space whale!"
-	item_cost = 56
+	item_cost = 60
 	path = /obj/item/storage/backpack/satchel/syndie_kit/revolver
 
 /datum/uplink_item/item/heistguns/incendiary_laser
 	name = "Incendiary Laser Blaster"
 	desc = "This here piece of kit is a warcrime in nearly every civilized colony you'll find. It ain't fer no civilized men, but it'll \
 	light those bastard navy men on fire and make em die screaming. Just don't get caught with it!"
-	item_cost = 45
+	item_cost = 50
 	path = /obj/item/gun/energy/incendiary_laser
 
 /datum/uplink_item/item/heistguns/smg
 	name = "Standard Submachine Gun"
 	desc = "A lead belcher if I ever saw one, this baby will fill the halls with bullets if you let her. Just don't overestimate your ammo capacity, \
 	twenty rounds goes faster than ya think."
-	item_cost = 65
+	item_cost = 70
 	path = /obj/item/gun/projectile/automatic/smg
 
 /datum/uplink_item/item/heistguns/energy_cutlass
 	name = "Energy Cutlass"
 	desc = "A modern take on a classic blade. Young sailors who ain't got their sea legs will say yer an idiot, that any fool will shoot faster than ya can cut, \
 	but they don't know nothin. They certainly won't be sayin shite when yer up in their face and their arm is off, ey!"
-	item_cost = 30
+	item_cost = 45
 	path = /obj/item/energy_blade/cutlass
 
 //////////////
@@ -107,21 +108,21 @@
 	name = "Haywire Slug"
 	desc = "12-gauge anti-technological shell, for eliminating machinery with extreme prejudice. Load one of these into your shotgun as its first blast, \
 	and you can disable your opponent's radio systems with ease."
-	item_cost = 1
+	item_cost = 2
 	path = /obj/item/ammo_casing/shotgun/emp
 
 /datum/uplink_item/item/heistammo/speedloader_magnum
 	name = "Magnum Speedloader"
 	desc = "Do not be on the wrong end of this. 15mm does not play around, and even armored targets will struggle to withstand being slammed by the full force \
 	of this high caliber pistol round."
-	item_cost = 6
+	item_cost = 7
 	path = /obj/item/ammo_magazine/speedloader
 
 /datum/uplink_item/item/heistammo/smg
 	name = "Standard Box Magazine"
 	desc = "20 round magazine of 7mm SMG ammo. Not particularly powerful compared to higher caliber rounds, but it won't punch holes in the hull easily \
 	and you still don't want to get sprayed with this, even if you are wearing a bulletproof vest."
-	item_cost = 8
+	item_cost = 18
 	path = /obj/item/ammo_magazine/smg
 
 /datum/uplink_item/item/heistammo/shotgun_shells
@@ -142,7 +143,7 @@
 	name = "10mm Pistol Magazine"
 	desc = "Cheap, affordable handgun magazine with ten shots of 10mm. It should be enough to handle most lightly armored targets, but it'll struggle \
 	against serious kit."
-	item_cost = 2
+	item_cost = 4
 	path = /obj/item/ammo_magazine/pistol
 //////////////
 //Explosives//
@@ -156,14 +157,14 @@
 	name = "Explosive Implant (DANGER!)"
 	desc = "They look small, but these implants are potent enough to guarantee a kill. They're useful if you want to avoid capture, but they can also be used \
 	to ensure compliance from prisoners who have more than two brain cells (not many). You can use either vocal or radio signalers to trigger them."
-	item_cost = 15
+	item_cost = 14
 	path = /obj/item/storage/box/syndie_kit/imp_explosive
 
 /datum/uplink_item/item/heistexplosives/plastique
 	name = "C-4"
 	desc = "Quick and to the point, with just enough charge to punch through a wall (though you may need to take out the supports separately). Fun to place \
 	outside of hulls to expose unprotected civilians to the horrors of space."
-	item_cost = 8
+	item_cost = 4
 	path = /obj/item/plastique
 
 /datum/uplink_item/item/heistexplosives/decompiler
@@ -174,66 +175,61 @@
 
 /datum/uplink_item/item/heistexplosives/decompilers
 	name = "5x Decompiler Grenades"
-	item_cost = 25
+	item_cost = 30
 	path = /obj/item/storage/box/decompilers
 
 /datum/uplink_item/item/heistexplosives/anti_photon
 	name = "1x Photon Disruption Grenade"
 	desc = "Photon disruptors literally suck the light out of an area. Its questionably useful compared to a smoke grenade, but it sure is fancy. \
 	Put the fear of the night back into people."
-	item_cost = 4
+	item_cost = 8
 	path = /obj/item/grenade/anti_photon
 
 /datum/uplink_item/item/heistexplosives/anti_photons
 	name = "5x Photon Disruption Grenades"
-	item_cost = 16
+	item_cost = 32
 	path = /obj/item/storage/box/anti_photons
 
 /datum/uplink_item/item/heistexplosives/smoke
 	name = "1x Smoke Grenade"
 	desc = "Tactical smoke grenade, for when you really need to not be where you are. Just be careful when repositioning, concealment is not the same as cover."
-	item_cost = 4
+	item_cost = 8
 	path = /obj/item/grenade/smokebomb
 
 /datum/uplink_item/item/heistexplosives/smokes
 	name = "5x Smoke Grenades"
-	item_cost = 16
+	item_cost = 32
 	path = /obj/item/storage/box/smokes
 
 /datum/uplink_item/item/heistexplosives/emp
 	name = "1x EMP Grenade"
 	desc = "Extremely useful for disabling technology and robotic foes. A favorite of luddites and anarchists everywhere. Extremely fun to use \
 	on people with cybernetic hearts or lungs."
-	item_cost = 8
+	item_cost = 12
 	path = /obj/item/grenade/empgrenade
 
 /datum/uplink_item/item/heistexplosives/emps
 	name = "5x EMP Grenades"
-	item_cost = 24
+	item_cost = 36
 	path = /obj/item/storage/box/emps
 
 /datum/uplink_item/item/heistexplosives/frag
 	name = "1x Fragmentation Grenade"
 	desc = "Shrapnel grenades, useful for flushing foes out of cover. Just be careful they don't throw them back at you."
-	item_cost = 10
+	item_cost = 16
 	path = /obj/item/grenade/frag
 
 /datum/uplink_item/item/heistexplosives/frags
 	name = "5x Fragmentation Grenades"
-	item_cost = 40
+	item_cost = 50
 	path = /obj/item/storage/box/frags
 
 /datum/uplink_item/item/heistexplosives/supermatter
 	name = "1x Supermatter Grenade"
 	desc = "I can confidently say this thing is a warcrime. Containing a small supermatter shard that will delaminate once you trigger it, it'll drag everyone to \
 	into a radioactive vortex before exploding. Throw it into a crowded room and laugh."
-	item_cost = 15
+	item_cost = 50
 	path = /obj/item/grenade/supermatter
-
-/datum/uplink_item/item/heistexplosives/supermatters
-	name = "5x Supermatter Grenades"
-	item_cost = 60
-	path = /obj/item/storage/box/supermatters
 /////////////////////////
 //Armor and Accessories//
 /////////////////////////
@@ -266,27 +262,27 @@
 	name = "Thermal Imaging Eyepatch"
 	desc = "Hear me out. getting shot sucks. It hurts, but more importantly, the blood gets on the drip, and we can't have that. This ain't your pa's eyepatch, \
 	it comes equipped with a thermal imaging device that'll make sure you see any punks who want to ruin your day before they see you."
-	item_cost = 24
+	item_cost = 36
 	path = /obj/item/clothing/glasses/thermal/plain/eyepatch
 
 /datum/uplink_item/item/heistarmor/syndigaloshes
 	name = "No-Slip Shoes"
 	desc = "We've all probably done it before. We walk into a room, with an aura of power and the look of a king, and then ya slip on a piece of soap \
 	and look like a clown. These will make sure that doesn't happen to you."
-	item_cost = 4
+	item_cost = 6
 	path = /obj/item/clothing/shoes/syndigaloshes
 
 /datum/uplink_item/item/heistarmor/bandolier
 	name = "Bandolier"
 	desc = "Show off that you aren't in danger, you ARE the danger! This bandolier is your go to product for carrying knives, grenades, ammo, and drugs. \
 	Become the gunslinger you were meant to be, and kick ass!"
-	item_cost = 4
+	item_cost = 1
 	path = /obj/item/clothing/accessory/storage/bandolier
 
 /datum/uplink_item/item/heistarmor/webbing
 	name = "Brown Webbing"
 	desc = "Rugged and reliable, with space for five items, this webbing won't let you down."
-	item_cost = 2
+	item_cost = 1
 	path = /obj/item/clothing/accessory/storage/vest/brown
 
 /datum/uplink_item/item/heistarmor/toolbelt
@@ -297,43 +293,43 @@
 
 /datum/uplink_item/item/heistarmor/gunbelt
 	name = "Security Belt"
-	desc = "This here black belt shows all the fools around ya that you mean business. It'll hold all the ammo you could ask for, and comes with a convenient \
-	holster, so you can show off the big iron on your hip!"
-	item_cost = 2
-	path = /obj/item/storage/belt/holster/security
+	desc = "This here black belt shows all the fools around ya that you mean business. It'll hold all the ammo you could ask for, and then some. \
+	Remind em all that God made man, but bullets made us equal!"
+	item_cost = 1
+	path = /obj/item/storage/belt/security
 
 /datum/uplink_item/item/heistarmor/coat
 	name = "Pirate Coat"
 	desc = "Show folks who the top bitch in this ship is with this swanky coat! Comes with pistol grade armor, so you won't be left totally defenseless either!"
-	item_cost = 8
+	item_cost = 4
 	path = /obj/item/clothing/suit/armor/pirate
 
 /datum/uplink_item/item/heistarmor/shades
 	name = "Protective Sunglasses and Half Mask"
 	desc = "You want to look like a real badass? Ditch the helmet, throw on the shades and mask, and kick ass. Crash this ship with no survivors, \
 	and do it in style."
-	item_cost = 8
+	item_cost = 2
 	path = /obj/item/storage/box/syndie_kit/shades
 
 datum/uplink_item/item/heistarmor/ballisticarmor
 	name = "Full Ballistic Armor"
 	desc = "For when you absolutely, positively expect to get shot, accept no substitutes. Full ballistic armor is probably the best protection you can get \
 	against ballistic threats, but the kevlar plates don't help much against energy based projectiles, and it won't stop much more than a knife in a brawl."
-	item_cost = 16
+	item_cost = 24
 	path = /obj/item/storage/backpack/satchel/syndie_kit/ballisticarmor
 
 /datum/uplink_item/item/heistarmor/ablativearmor
 	name = "Full Ablative Armor"
 	desc = "Literally blind people with your fashion in this shiny ablative armor. It's more than capable of deflecting energy beams off of those diamond coated \
 	armored plates, just don't expect it to hold up to bullets!"
-	item_cost = 16
+	item_cost = 24
 	path = /obj/item/storage/backpack/satchel/syndie_kit/ablativearmor
 
 /datum/uplink_item/item/heistarmor/armored_voidsuit
 	name = "Armored Voidsuit"
 	desc = "With a little elbow grease, ingenuity, and a whole lot of armored plates, you can get this fairly protective voidsuit. It looks ugly, \
 	but the additional accessories do a good job of hiding the shody workmanship."
-	item_cost = 24
+	item_cost = 22
 	path = /obj/item/storage/backpack/satchel/syndie_kit/piratevoid
 
 /////////////////////
@@ -349,7 +345,7 @@ datum/uplink_item/item/heistarmor/ballisticarmor
 	desc = "You haven't felt alive until you've murdered a man with a toolbox. It might not look it, but this baby is better weighted than usual, \
 	so its easier to swing around. Do some drugs, find someone you hate, and cave their head in with this thing. You'll feel like a GOD!! \
 	Also, it has tools and a pair of yellow gloves I guess."
-	item_cost = 8
+	item_cost = 4
 	path = /obj/item/storage/toolbox/syndicate
 
 /datum/uplink_item/item/heisttools/handcuffs
